@@ -1,0 +1,43 @@
+.GameLog {
+    text-align: center;
+    background: linear-gradient(#383624, #282617);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    align-self: center;
+    border-radius: 12px;
+}
+
+.GameLog h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.GameLog ol {
+    max-width: 20rem;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto 2rem;
+}
+
+.GameLog ol li {
+    border-radius: 4px;
+    animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    margin: 0.75rem;
+}
+
+@keyframes slide-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

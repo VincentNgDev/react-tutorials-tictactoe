@@ -1,0 +1,19 @@
+.GameBoard {
+    margin: 0;
+}
+
+#row {
+    list-style: none;
+    padding: 0;
+}
+
+#row li {
+    margin: 1rem;
+}
+
+#column {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
